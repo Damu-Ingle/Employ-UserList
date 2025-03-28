@@ -69,7 +69,7 @@ Enter the test credentials:
 
 Email: eve.holt@reqres.in
 
-Password: cityslicka
+Password: c********a
 
 Click Login to access the user list.
 
