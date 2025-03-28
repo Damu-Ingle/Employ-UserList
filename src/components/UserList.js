@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { Modal, Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLessThan, faGreaterThan } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +7,6 @@ import EditUserModal from "./EditUserModal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const UsersList = () => {
-    const navigate = useNavigate();
     const [users, setUsers] = useState([]);
     const [selectedUser, setSelectedUser] = useState(null);
     const [page, setPage] = useState(1);
@@ -17,7 +15,7 @@ const UsersList = () => {
 
     useEffect(() => {
         fetchUsers();
-    }, [page]);
+    });
 
     const fetchUsers = async () => {
         try {

@@ -5,7 +5,6 @@ import axios from "axios";
 const Login = ({ setIsLoggedIn }) => {
     const [email, setEmail] = useState("eve.holt@reqres.in");
     const [password, setPassword] = useState("cityslicka");
-    // const [showPassword, setShowPassword] = useState(false);
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
@@ -38,7 +37,6 @@ const Login = ({ setIsLoggedIn }) => {
                     <div className="mb-3">
                         <label className="form-label">Password</label>
                         <input type='password' className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                        {/* <input type="checkbox" className="form-check-input" id="showPassword" onChange={() => setShowPassword(!showPassword)} /> Show Password */}
                     </div>
                     <button type="submit" className="btn btn-primary w-100">Login</button>
                 </form>
