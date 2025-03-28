@@ -1,3 +1,81 @@
+Employ-UserList
+A simple React-based user management system that allows users to log in and view a list of employees. The app uses reqres.in API for authentication and user data.
+
+🚀 Features
+User authentication using reqres.in API
+
+Secure login with email and password
+
+Persistent authentication using localStorage
+
+Navigation between login and user list pages
+
+🛠️ Tech Stack
+Frontend: React.js, React Router, Bootstrap
+
+Backend API: Reqres API
+
+State Management: React Hooks (useState, useEffect)
+
+📂 Project Structure
+php
+Copy
+Edit
+Employ-UserList/
+│── src/
+│   ├── components/
+│   │   ├── Login.js   # Login page component
+│   │   ├── UserList.js # User list page component
+│   ├── App.js         # Main application file
+│   ├── index.js       # Entry point
+│── public/
+│── package.json       # Project dependencies
+│── README.md          # Project documentation
+🔧 Installation & Setup
+1️⃣ Clone the repository
+
+sh
+Copy
+Edit
+git clone https://github.com/Damu-Ingle/Employ-UserList.git
+cd Employ-UserList
+2️⃣ Install dependencies
+
+sh
+Copy
+Edit
+npm install
+3️⃣ Run the project
+
+sh
+Copy
+Edit
+npm start
+The app will run on http://localhost:3000.
+
+🔐 Authentication Flow
+Users log in using predefined credentials (reqres.in API).
+
+If login is successful, a token is stored in localStorage.
+
+If the token exists, the user is redirected to the User List page.
+
+If not logged in, the user is redirected to the Login page.
+
+📌 Usage Guide
+Open the app in your browser.
+
+Enter the test credentials:
+
+Email: eve.holt@reqres.in
+
+Password: cityslicka
+
+Click Login to access the user list.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
